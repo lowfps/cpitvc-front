@@ -1,0 +1,322 @@
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1><span>CPTIVC</span></h1>
+      <h2>CONSEJO PROFESIONAL DE INGENIERÍA DE TRANSPORTES Y VÍAS DE COLOMBIA</h2>
+      <!-- <button class="btn" (click)="open(mymodal)"> -->
+      <button type="button" class="mt-5 mx-5 btn scrollto btn-get-started " data-bs-toggle="modal" data-bs-target="modalCertif" (click)="open(mymodal)">Genere su certificado</button>
+      <!-- ESTRUCTURA DEL MODAL -->    
+        
+        <ng-template #mymodal let-modal>
+        
+          <div class="modal-header">
+        
+            <h4 class="modal-title" id="modal-basic-title">Ingresa su número de cédula:</h4>
+        
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        
+              <span aria-hidden="true">×</span>
+        
+            </button>
+        
+          </div>
+        
+          <div class="modal-body">
+        
+            <div class="input-group mb-3">
+              <input #cedula type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                required>
+              <button type="button" class="btn">
+                <a class="btn-get-started scrollto" (click)="generarCertif(cedula.value)">Generar</a>
+                <!-- <a href="http://localhost:8098/api/ingeniero/1114122133" target="blank_" class="btn-get-started scrollto">Generar</a> -->
+                
+              </button>
+            </div>
+        
+          </div>
+        
+          <div class="modal-footer">
+        
+            <!-- <button  type="button" class="btn" (click)="modal.close('Save click')"> -->
+            <!-- <button type="button" class="btn">
+                      <a class="btn-get-started scrollto">Generar</a>
+                    </button> -->
+        
+          </div>
+        
+        </ng-template>
+
+
+
+
+      <!-- FIN MODAL -->
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= What We Do Section ======= -->
+    <section id="what-we-do" class="what-we-do">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Apreciado Ingeniero de Transporte y Vías y/o profesionales afines</h2>
+          <p>Bienvenido a su nuevo y moderno portal del  Consejo Profesional de Ingeniería de Transportes y Vías de Colombia, en él encontraran un renovado y óptimo servicio que les permitirá desarrollar su actividad profesional, con ética, honestidad y eficacia. Este portal, está a su servicio y cuenta con las herramientas tecnológicas más actualizadas que le permitirán un desempeño eficiente de su profesión como Ingeniero, Especialista, Técnico, Tecnólogo y/o auxiliar de la Ingeniería de Transportes y Vías. En cumplimiento de la ley 33 de 1989 y la ley 842 del 2003</p>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+        </div> -->
+
+      </div>
+    </section><!-- End What We Do Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>Principios</h3>
+            <p>
+              Nosotros, los profesionales de la ingeniería colombiana, nos comprometemos a cumplir con los siguientes principios éticos : veracidad, integridad, responsabilidad, precisión.
+            </p>
+            <!-- <ul>
+              <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul> -->
+            <div class="row icon-boxes">
+              <div class="col-md-6">
+                <i class="bx bx-receipt"></i>
+                <h4>Misión</h4>
+               <p>El CPITVC para el 2022 será reconocido nacional e internacionalmente, como un órganismo autónomo de calidad, que velará por el ejercicio profesional y ético de los ingenerios en transporte y Vías, profesiones afines y auxiliares, garantizando productos y servicios de alta calidad, fundamentada en valores y servicio al público.</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Visión<nav></nav></h4>
+                <p>El CPITVC siendo un organismo autónomo público creado por ley, participará en la inspección control y vigilancia dadas por la ley, al ejercicio de la Ingeniería en transporte y Vías de Colombia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+ 
+      <!-- ======= FAW Section ======= -->
+      <section id="team" class="team" style="background-color: #f7fbfe;">
+                <div class="container">
+                  <div class="h2 text-center fw-bold">Preguntas frecuentes</div>
+                  <div class="h6 text-center fw-bold">Seleccione una pregunta</div>
+                  <div class="wrapper rounded shadow">
+                    <div class="accordion accordion-flush border-top border-start border-end" id="myAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne"> ¿Cuales son las sedes del CPITVC? </button> </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0 bg-white">
+                              <li><p href="#">Nuestra única sede se encuentra en la ciudad de Bogota Cra 13 - A # 97 - 98 Barrio Chico.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo"> ¿Qué es la matrícula profesional? </button> </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0 bg-white">
+                              <li><p href="#">Es el acto administrativo mediante el cual el estado a través del Consejo Profesional de Ingenieía de Transportes y Vías
+                              de Colombia, autoriza el ejercicio de esta profesión en el territorio nacional, autorización que se acredita mediante la
+                              TARJETA PROFESIONAL.
+                              
+                              Llenando los requisitos establecidos el Consejo estudia la documentación y si la encuentra cierta y completa, lo
+                              inscribe en el registro de profesionales por medio de un acto administrativo y procede a expedir el correspondiente
+                              certificado por medio de la tarjeta profesional.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree"> ¿Qué es la tarjeta profesional </button> </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0 bg-white">
+                              <li><p>Es el único documento idóneo mediante el cual se acredita la matrícula profesional y autoriza a su titular para ejercer
+                              la profesión de Ingenieo de Transporte y Vías en el territorio nacional (Ley 842 de 2003, Articulo 6).</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour"> ¿Qué documentos acredita el ejercicio legal de la ingeniería de transportes y vías de Colombia? </button> </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0 bg-white">
+                              <li><p>El único documento idóneo que autoriza al ingeniero para ejercer la profesión es la TARJETA DE MATRÍCULA PROFESIONAL, en
+                              la cual se certifica el número de su respectiva Matrícula Profesional.</p></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive"> ¿Cómo legalizo la situación profesional? </button> </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0 bg-white">
+                              <li><p>Si Usted es Ingeniero graduado en un Centro de Educación Superior reconocido por el Ministerio de Educación de Colombia,
+                              para poder ejercer la profesión de acuerdo a la legislación vigente en el país, debe tramitar la Matrícula Profesional y
+                              la Tarjeta de Matrícula Profesional, en el Consejo Profesional respectivo. Los Ingenieros de Transportes y Vías, deben
+                              hacer los trámites ante el Consejo Profesional de Ingeniería de Transportes y Vías de Colombia en cualquiera de las
+                              siguientes sedes: Bogotá: Cra 13 - A # 97 - 98 Barrio Chico.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                            aria-controls="flush-collapseSix"> ¿Cuándo y en donde debo tramitar la matricula y tarjeta de matricula profesional? </button> </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#myAccordion">
+                          <div class="accordion-body p-0">
+                            <ul class="list-unstyled m-0">
+                              <li><p>Una vez se obtenga el Título de Ingeniero de Transportes y Vías, otorgado por universidad legalmente reconocida en
+                              Colombia, diríjase al Consejo de Ingeniería de Transportes y Vías de Colombia en sus sedes de Bogotá o Tunja, o solicite
+                              su tarjeta Profesional realizando los pasos establecidos en la sección Tarjeta Profesional. El consejo estudiará su
+                              petición y la documentación adjuntada y si la encuentra correcta, lo inscribirá en el Registro Profesional y procederá a
+                              expedir la correspondiente Tarjeta de Matrícula Profesional, por medio de la cual se acredita su Matrícula Profesional.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                </div>
+      </section><!-- End FAQ Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Dirección:</h4>
+                  <p>Calle 110 #6-62<br>Piso 1 Barrio Santa Ana Oriental<br>Bogotá, Colombia</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0" >
+                  <i class="bi bi-phone"></i>
+                  <h4>Teléfonos:</h4>
+                  <p>(1)3863429 <br>(57)3142188407</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Correo:</h4>
+                  <p>directorejecutivo@consejoprofesionalitvc.org<br>secretaria@consejoprofesionalitvc.org</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+</body>
