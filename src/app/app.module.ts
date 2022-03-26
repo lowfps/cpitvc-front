@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CertificadosComponent } from './components/certificados/certificados.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule, HttpClient } from "@angular/common/http";
+import { NormatividadComponent } from './components/normatividad/normatividad.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule, HttpClient } from "@angular/common/http";
     InicioComponent,
     HeaderComponent,
     FooterComponent,
-    CertificadosComponent
+    CertificadosComponent,
+    NormatividadComponent
   ],
   imports: [
     BrowserModule,
